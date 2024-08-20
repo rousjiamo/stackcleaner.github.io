@@ -1,0 +1,323 @@
+$green: #05dfb6;
+$primary: $green;
+
+$yellow: #f2c94c;
+$secondary: $yellow;
+@import "bootstrap/scss/bootstrap";
+
+// body {
+//   font-family: "Harmony" !important;
+// }
+
+/* General placeholder color for all inputs */
+::placeholder {
+  color: #868788;
+  opacity: 1; /* Optional: Ensures full opacity */
+}
+
+/* Home.css */
+.custom-col-height {
+  /* Ensure there is some minimum height for small screens */
+  min-height: 300px; /* Adjust this value as needed */
+  padding: 1rem; /* Adjust padding if needed */
+}
+
+/* You can also add specific styles for small screens */
+@media (max-width: 767px) {
+  .custom-col-height {
+    min-height: 400px; /* Adjust this value as needed for small screens */
+  }
+}
+
+.collateral {
+  background-color: $secondary;
+}
+
+.bsd {
+  background-color: $primary;
+}
+
+.pointer {
+  cursor: pointer; // ensures the hand cursor shows on hover
+  transition: fill 0.3s ease; // smooth transition for color change
+  fill: black; // default color of the icon
+
+  &:hover {
+    fill: gray; // change color to gray on hover
+  }
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+.navbar-toggler-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+/* Chrome, Safari, Edge, Opera  remove focus ring*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button::-webkit-outer-spin-button,
+button::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.responsive-width {
+  flex: 1 1 100%; /* Full width by default */
+}
+
+.focus-ring {
+  outline-style: none;
+  box-shadow: none;
+}
+
+.text-gray {
+  color: #8f8fa0;
+}
+
+.gray-hover {
+  &:hover {
+    color: #929292;
+  }
+}
+
+.bg-gray {
+  background-color: #e7e7e7 !important;
+}
+
+.r12 {
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.r14 {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.m14 {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.r16 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.m16 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.b16 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.r18 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.m18 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.b18 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.m20 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.b20 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.p10 {
+  padding: 10px;
+}
+
+.p20 {
+  padding: 20px;
+}
+
+.px24y12 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.p12 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.py18 {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.pxy12 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.m24 {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.my10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.my20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.mxy10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.mx20 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.p5 {
+  padding: 5px;
+}
+
+.not-allowed {
+  cursor: not-allowed;
+}
+
+.assetLogo {
+  width: 32px;
+  height: 32px;
+}
+
+.btn-close:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.button1 {
+  background-color: transparent;
+  border: none;
+  border-radius: 0%;
+  border-bottom: 2px solid transparent;
+  padding: 0%;
+  padding-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #8f8fa0;
+  transition: border-color 0.3s ease, color 0.3s ease;
+
+  &.active {
+    border-bottom-color: var(--bs-primary); /* Primary color on click */
+    background-color: transparent;
+    font-weight: 600;
+    color: var(--bs-primary); /* Text turns primary on click */
+  }
+}
+
+.button1:hover {
+  background-color: transparent !important;
+  border-bottom-color: var(--bs-primary);
+  border-radius: 0px;
+}
+
+.button2 {
+  background-color: none;
+  // border: none;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+}
+
+td span {
+  display: block;
+}
+
+p span {
+  display: block;
+}
+
+.modal {
+  .modal-dialog {
+    max-width: 420px;
+  }
+  .modal-content {
+    height: 100%;
+    overflow-y: auto;
+    border-radius: 2px;
+  }
+}
+
+.modal .form-control:focus {
+  box-shadow: none;
+  border-color: transparent;
+  outline: none;
+}
+
+@media (max-width: 576px) {
+  .modal .modal-dialog {
+    max-width: 100%; /* Ensure full width on small screens */
+    margin: 0 10px; /* Provide some margin on small screens */
+  }
+}
